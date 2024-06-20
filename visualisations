@@ -1,0 +1,41 @@
++---------------------+
+|    Home Page        |
+|  - Register/Login   |
++---------+-----------+
+          |
+          v
++---------+-----------+
+|     User Dashboard  |
+|  - Overview         |
+|  - Progress         |
+|  - Rewards          |
+|  - Links to Game    |
+|    and Resources    |
++---------+-----------+
+          |
+          v
++---------+-----------+               +---------------------+
+|    Trivia Game      |               |   Resources Page    |
+|  - Field Selection  |               |  - Cultural Videos  |
+|  - Question Display |<------------->|  - Cultural Links   |
+|  - Answer Options   |               +---------------------+
+|  - Progress Bar     |
++---------+-----------+
+          |
+          v
++---------+-----------+
+|    Machine Learning |
+|    Model            |
+|  - Personalize      |
+|    Questions        |
+|  - Track Progress   |
++---------------------+
+          |
+          v
++---------------------+
+|   Database          |
+|  - Users            |
+|  - Questions        |
+|  - Progress         |
+|  - Resources        |
++---------------------+
