@@ -1,0 +1,5 @@
+npx create-react-app cultural-journey-frontend
+cd cultural-journey-frontend
+
+
+npm install axios react-router-dom
