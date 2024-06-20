@@ -1,23 +1,18 @@
 // src/components/Login.js
 
 import React, { useState } from 'react';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../actions/authActions';
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const dispatch = useDispatch();
+  const error = useSelector((state) => state.auth.error);
 
-  const handleLogin = async (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    try {
-      await axios.post('http://localhost:8000/api/login/', {
-        username,
-        password
-      });
-      alert('Login successful');
-    } catch (error) {
-      console.error('There was an error logging in!', error);
-    }
+    dispatch(login({ username, password }));
   };
 
   return (
@@ -28,8 +23,10 @@ function Login() {
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
         <button type="submit">Login</button>
       </form>
+      {error && <p>{error}</p>}
     </div>
   );
 }
 
 export default Login;
+
