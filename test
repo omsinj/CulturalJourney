@@ -1,0 +1,23 @@
+python manage.py runserver
+
+npm start
+
+
+Test the Application
+Register/Login:
+
+Visit http://localhost:3000/register to create a new user account.
+Visit http://localhost:3000/login to log in.
+Door Selection:
+
+Visit http://localhost:3000/door-selection to select a field and enter the game.
+Video Narrative:
+
+After selecting a field, a video narrative will be played before starting the trivia game.
+Trivia Game:
+
+Answer the questions and progress through different levels.
+Observe the progress bar and feedback for each answer.
+Resources:
+
+Visit http://localhost:3000/resources to view cultural videos and links.
